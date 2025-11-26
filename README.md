@@ -1,2 +1,2 @@
-## ✨ Gestor Interactivo de Lista de Tareas
+## ✨ Calculadora de Propinas Modular
 
