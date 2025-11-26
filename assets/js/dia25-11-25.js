@@ -1,21 +1,21 @@
 document.addEventListener(`DOMContentLoaded`, () => {
 
-    const monto = Number(prompt(`Ingrese en numeros el valor de la cuenta`));
-    const porcentaje = Number(prompt(`Ingrese en numeros el porcentaje de la propina`));
+    const montoCuenta = parseFloat(prompt(`Ingrese en numeros el valor de la cuenta`));
+    const porcentajePropina = parseFloat(prompt(`Ingrese en numeros el porcentaje de la propina`));
 
-    const calcularPropina = (monto, porcentaje) => {
+    const calcularPropina = (montoCuenta, porcentajePropina) => {
 
-        const montoPropina = (monto * (porcentaje / 100));
+        const montoPropina = (montoCuenta * (porcentajePropina / 100));
         return montoPropina;
  
     }
 
-    const resultado = calcularPropina(monto, porcentaje);
+    const resultado = calcularPropina(montoCuenta, porcentajePropina);
 
     console.log(`--- Resumen de la Cuenta ---`);
-    console.log(`Monto de la cuenta: ${monto}`);
-    console.log(`Propina (${porcentaje}%): ${resultado}`);
-    console.log(`Total a pagar: $${monto + resultado}`);
+    console.log(`Monto de la cuenta: ${montoCuenta}`);
+    console.log(`Propina (${porcentajePropina}%): ${resultado}`);
+    console.log(`Total a pagar: $${montoCuenta + resultado}`);
 
 
 
