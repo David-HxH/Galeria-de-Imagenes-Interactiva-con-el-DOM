@@ -7,12 +7,15 @@ document.addEventListener(`DOMContentLoaded`, () => {
 
         const montoPropina = (monto * (porcentaje / 100));
         return montoPropina;
-
-        
+ 
     }
 
     const resultado = calcularPropina(monto, porcentaje);
-    console.log(`La propina calculada es ${resultado}`)
+
+    console.log(`--- Resumen de la Cuenta ---`);
+    console.log(`Monto de la cuenta: ${monto}`);
+    console.log(`Propina (${porcentaje}%): ${resultado}`);
+    console.log(`Total a pagar: $${monto + resultado}`);
 
 
 
